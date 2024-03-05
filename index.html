@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology - Lab 2</title>
+    <script src="calcScript"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #aa668f;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #calculator-container {
+            border: 1px solid rgb(131, 39, 212);
+            background-color: #f0eff5;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        button {
+            flex: 1;
+            height: 60px;
+            margin: 5px;
+            font-size: 18px;
+            border: none;
+            background-color: #89709c;
+            cursor: pointer;
+        }
+
+        button:hover {
+        background-color: #a48eb9; 
+        }
+
+        .cButton {
+            flex: 3;
+            height: 60px;
+            margin: 5px;
+            font-size: 18px;
+            border: none;
+            background-color: #89709c;
+            cursor: pointer;
+        }
+
+        #display {
+            width: 260px;
+            padding: 20px;
+            margin: 10px auto;
+            font-size: 24px;
+            text-align: right;
+            background-color: black;
+            color: white;
+            text-align: left;
+            border-bottom: 1px solid #cd429c;
+        }
+
+        .button-row {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+<div id="calculator-container">
+    <div id="display">0</div>
+    <div class="button-row">
+        <button class="but1">x^2</button>
+        <button class="but1">1/x</button>
+        <button class="but1">|x|</button>
+        <button class="but1">exp</button>
+        <button class="but1">π</button>
+    </div>
+    <div class="button-row">
+        <button class="but1">√x</button>
+        <button class="but1">(</button>
+        <button class="but1">)</button>
+        <button class="but1">n!</button>
+        <button class="but1">mod</button>
+    </div>
+    <div class="button-row">
+        <button class="but1">x^y</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="but1">+</button>
+    </div>
+    <div class="button-row">
+        <button class="but1">10^x</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="but1">-</button>
+    </div>
+    <div class="button-row">
+        <button class="but1">log</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="but1">*</button>
+    </div>
+    <div class="button-row">
+        <button class="but1">ln</button>
+        <button class="but1">=</button>
+        <button class="but1">0</button>
+        <button class="but1">.</button>
+        <button class="but1">/</button>
+    </div>
+    <div class="button-row">
+        <button class="cButton">C</button>
+    </div>
+</div>
+
+</body>
+</html>
